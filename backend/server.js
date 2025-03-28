@@ -15,7 +15,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: 'https://chat-app-backend-uoec.onrender.com',  // Allow frontend to access
+    origin: 'https://chat-app-isxp.onrender.com',  // Allow frontend to access
     // methods: 'GET,POST,PUT,DELETE,OPTIONS',
     // allowedHeaders: 'Content-Type,Authorization'
 }));
@@ -44,7 +44,7 @@ const server = app.listen(port, console.log(`server running on PORT : ${port}`))
 const io = require("socket.io")(server,{
     pingTimeout: 60000,
     cors: {
-        origin: 'https://chat-app-backend-uoec.onrender.com', 
+        origin: 'https://chat-app-isxp.onrender.com', 
         credentials: true
     }
 });
